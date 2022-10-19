@@ -55,7 +55,6 @@ gem 'imgkit'
 
 gem 'htmlcsstoimage-api'
 
-
 gem "wkhtmltopdf-binary", group: :development
 
 group :development, :test do
