@@ -6,7 +6,7 @@ require "rails/all"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module Blog5
+module A1soir3
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
@@ -19,14 +19,14 @@ module Blog5
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
 
-    require 'pdfkit'
-    config.middleware.use PDFKit::Middleware
+    #require 'pdfkit'
+    #config.middleware.use PDFKit::Middleware
 
-    require 'imgkit'
+    #require 'imgkit'
    # config.middleware.use IMGKit::Middleware
 
-   require 'grover'
-config.middleware.use Grover::Middleware
+    require 'grover'
+    config.middleware.use Grover::Middleware
 
   end
 end
